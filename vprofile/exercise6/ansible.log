@@ -1,0 +1,61 @@
+2022-07-21 16:50:56,841 p=8667 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 16:50:56,852 p=8667 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 16:50:58,191 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,203 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:58,932 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,941 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:59,500 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:59,510 p=8667 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 16:51:00,198 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,207 p=8667 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 16:51:00,636 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,645 p=8667 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 16:51:01,089 p=8667 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:04:55,193 p=8780 u=ubuntu n=ansible | playbook: db.yaml
+2022-07-21 17:05:03,192 p=8786 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:05:03,204 p=8786 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:05:04,556 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:04,567 p=8786 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:05,307 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:05,316 p=8786 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:05,887 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:05,895 p=8786 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:05:06,582 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:06,592 p=8786 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:05:07,045 p=8786 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:07,054 p=8786 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:07,561 p=8786 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:05:07,561 p=8786 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:05:26,970 p=8853 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:05:26,982 p=8853 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:05:27,868 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:27,876 p=8853 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:28,601 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:28,610 p=8853 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:29,165 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:29,174 p=8853 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:05:29,847 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:29,857 p=8853 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:05:30,300 p=8853 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:30,310 p=8853 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:05:30,753 p=8853 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 17:05:30,754 p=8853 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:05:30,754 p=8853 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:30,758 p=8853 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:05:30,758 p=8853 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

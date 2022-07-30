@@ -1,0 +1,20 @@
+2022-07-21 16:50:56,841 p=8667 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 16:50:56,852 p=8667 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 16:50:58,191 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,203 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:58,932 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,941 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:59,500 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:59,510 p=8667 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 16:51:00,198 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,207 p=8667 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 16:51:00,636 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,645 p=8667 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 16:51:01,089 p=8667 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

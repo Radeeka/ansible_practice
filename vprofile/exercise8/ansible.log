@@ -1,0 +1,906 @@
+2022-07-21 16:50:56,841 p=8667 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 16:50:56,852 p=8667 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 16:50:58,191 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,203 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:58,932 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:58,941 p=8667 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 16:50:59,500 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:50:59,510 p=8667 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 16:51:00,198 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,207 p=8667 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 16:51:00,636 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:00,645 p=8667 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 16:51:01,089 p=8667 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 16:51:01,090 p=8667 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 16:51:01,094 p=8667 u=ubuntu n=ansible | db01                       : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:04:55,193 p=8780 u=ubuntu n=ansible | playbook: db.yaml
+2022-07-21 17:05:03,192 p=8786 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:05:03,204 p=8786 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:05:04,556 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:04,567 p=8786 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:05,307 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:05,316 p=8786 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:05,887 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:05,895 p=8786 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:05:06,582 p=8786 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:06,592 p=8786 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:05:07,045 p=8786 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:07,054 p=8786 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:05:07,556 p=8786 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:07,561 p=8786 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:05:07,561 p=8786 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:05:26,970 p=8853 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:05:26,982 p=8853 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:05:27,868 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:27,876 p=8853 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:28,601 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:28,610 p=8853 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:05:29,165 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:29,174 p=8853 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:05:29,847 p=8853 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:05:29,857 p=8853 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:05:30,300 p=8853 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:30,310 p=8853 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:05:30,753 p=8853 u=ubuntu n=ansible | [WARNING]: The value ******** (type int) in a string field was converted to u'********' (type string). If this does not look
+like what you expect, quote the entire value to ensure it does not change.
+
+2022-07-21 17:05:30,754 p=8853 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:05:30,754 p=8853 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:05:30,758 p=8853 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:05:30,758 p=8853 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:11:56,869 p=8939 u=ubuntu n=ansible | playbook: db.yaml
+2022-07-21 17:12:03,566 p=8946 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:12:03,578 p=8946 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:12:04,908 p=8946 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:12:04,919 p=8946 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:12:05,639 p=8946 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:12:05,648 p=8946 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:12:06,209 p=8946 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:12:06,217 p=8946 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:12:06,893 p=8946 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:12:06,903 p=8946 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:12:06,927 p=8946 u=ubuntu n=ansible | fatal: [db01]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dbname' is undefined\n\nThe error appears to be in '/home/ubuntu/vprofile/exercise7/db.yaml': line 25, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n        enabled: yes\n    - name: Create a new database with name 'bobdata'\n      ^ here\n"}
+2022-07-21 17:12:06,929 p=8946 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:12:06,929 p=8946 u=ubuntu n=ansible | db01                       : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:13:45,900 p=9001 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:13:45,912 p=9001 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:13:47,222 p=9001 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:13:47,233 p=9001 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:13:47,954 p=9001 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:13:47,963 p=9001 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:13:48,519 p=9001 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:13:48,528 p=9001 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:13:49,192 p=9001 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:13:49,201 p=9001 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:13:49,637 p=9001 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:13:49,646 p=9001 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:13:50,094 p=9001 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:13:50,094 p=9001 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:13:50,098 p=9001 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:13:50,098 p=9001 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:14:05,312 p=9069 u=ubuntu n=ansible | PLAY [Setup DBserver] **********************************************************************************************************
+2022-07-21 17:14:05,324 p=9069 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:14:06,281 p=9069 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:14:06,289 p=9069 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:14:07,016 p=9069 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:14:07,026 p=9069 u=ubuntu n=ansible | TASK [install mysql server] ****************************************************************************************************
+2022-07-21 17:14:07,578 p=9069 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:14:07,587 p=9069 u=ubuntu n=ansible | TASK [start & enable mariadb] **************************************************************************************************
+2022-07-21 17:14:08,254 p=9069 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:14:08,264 p=9069 u=ubuntu n=ansible | TASK [Create a new database with name 'bobdata'] *******************************************************************************
+2022-07-21 17:14:08,702 p=9069 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:14:08,711 p=9069 u=ubuntu n=ansible | TASK [Create database user with name 'admin'] **********************************************************************************
+2022-07-21 17:14:09,154 p=9069 u=ubuntu n=ansible | [WARNING]: Module did not set no_log for update_password
+
+2022-07-21 17:14:09,154 p=9069 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:14:09,158 p=9069 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:14:09,158 p=9069 u=ubuntu n=ansible | db01                       : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:03,221 p=9159 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:19:03,232 p=9159 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:19:04,752 p=9159 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:19:04,841 p=9159 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:19:04,870 p=9159 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:19:04,881 p=9159 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:19:05,615 p=9159 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:19:05,617 p=9159 u=ubuntu n=ansible | changed: [web02]
+2022-07-21 17:19:05,622 p=9159 u=ubuntu n=ansible | changed: [web01]
+2022-07-21 17:19:05,626 p=9159 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:19:05,626 p=9159 u=ubuntu n=ansible | db01                       : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:05,627 p=9159 u=ubuntu n=ansible | web01                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:05,627 p=9159 u=ubuntu n=ansible | web02                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:15,762 p=9237 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:19:15,773 p=9237 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:19:16,886 p=9237 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:19:16,900 p=9237 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:19:16,903 p=9237 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:19:16,910 p=9237 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:19:17,695 p=9237 u=ubuntu n=ansible | changed: [web01]
+2022-07-21 17:19:17,696 p=9237 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:19:17,697 p=9237 u=ubuntu n=ansible | changed: [web02]
+2022-07-21 17:19:17,701 p=9237 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:19:17,701 p=9237 u=ubuntu n=ansible | db01                       : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:17,701 p=9237 u=ubuntu n=ansible | web01                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:19:17,702 p=9237 u=ubuntu n=ansible | web02                      : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:09,235 p=9311 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:22:09,246 p=9311 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:22:10,743 p=9311 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:22:10,802 p=9311 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:22:10,812 p=9311 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:22:10,821 p=9311 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:22:11,539 p=9311 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:22:11,548 p=9311 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:22:11,548 p=9311 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:22:11,560 p=9311 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:22:11,625 p=9311 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:11,649 p=9311 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:11,664 p=9311 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:11,667 p=9311 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:22:11,668 p=9311 u=ubuntu n=ansible | db01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:11,668 p=9311 u=ubuntu n=ansible | web01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:11,668 p=9311 u=ubuntu n=ansible | web02                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:41,060 p=9394 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:22:41,072 p=9394 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:22:42,170 p=9394 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:22:42,184 p=9394 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:22:42,186 p=9394 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:22:42,193 p=9394 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:22:42,891 p=9394 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:22:42,893 p=9394 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:22:42,897 p=9394 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:22:42,908 p=9394 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:22:43,025 p=9394 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:43,049 p=9394 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:43,059 p=9394 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT": {
+        "append": false, 
+        "changed": false, 
+        "comment": "variable from playbook", 
+        "failed": false, 
+        "group": 1001, 
+        "home": "/home/playuser", 
+        "move_home": false, 
+        "name": "playuser", 
+        "shell": "/bin/bash", 
+        "state": "present", 
+        "uid": 1001
+    }
+}
+2022-07-21 17:22:43,062 p=9394 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:22:43,063 p=9394 u=ubuntu n=ansible | db01                       : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:43,063 p=9394 u=ubuntu n=ansible | web01                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:22:43,063 p=9394 u=ubuntu n=ansible | web02                      : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:23:29,789 p=9470 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:23:29,801 p=9470 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:23:30,926 p=9470 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:23:30,945 p=9470 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:23:30,973 p=9470 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:23:30,982 p=9470 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:23:31,697 p=9470 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:23:31,698 p=9470 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:23:31,699 p=9470 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:23:31,705 p=9470 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:23:31,770 p=9470 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:23:31,790 p=9470 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:23:31,801 p=9470 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:23:31,810 p=9470 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:23:31,874 p=9470 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:23:31,891 p=9470 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:23:31,904 p=9470 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:23:31,907 p=9470 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:23:31,908 p=9470 u=ubuntu n=ansible | db01                       : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:23:31,908 p=9470 u=ubuntu n=ansible | web01                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:23:31,908 p=9470 u=ubuntu n=ansible | web02                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:25:55,572 p=9645 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:25:55,584 p=9645 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:25:57,064 p=9645 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:25:57,078 p=9645 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:25:57,090 p=9645 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:25:57,098 p=9645 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:25:57,802 p=9645 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:25:57,805 p=9645 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:25:57,809 p=9645 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:25:57,820 p=9645 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:25:57,883 p=9645 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:25:57,902 p=9645 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:25:57,912 p=9645 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:25:57,921 p=9645 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:25:57,984 p=9645 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:25:58,008 p=9645 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:25:58,020 p=9645 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:25:58,023 p=9645 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:25:58,023 p=9645 u=ubuntu n=ansible | db01                       : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:25:58,023 p=9645 u=ubuntu n=ansible | web01                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:25:58,023 p=9645 u=ubuntu n=ansible | web02                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:26:22,097 p=9744 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:26:22,108 p=9744 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:26:23,213 p=9744 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:26:23,225 p=9744 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:26:23,227 p=9744 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:26:23,235 p=9744 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:26:23,929 p=9744 u=ubuntu n=ansible | changed: [web02]
+2022-07-21 17:26:23,931 p=9744 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:26:23,936 p=9744 u=ubuntu n=ansible | changed: [web01]
+2022-07-21 17:26:23,946 p=9744 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:26:24,131 p=9744 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,147 p=9744 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,156 p=9744 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,164 p=9744 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:26:24,227 p=9744 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,250 p=9744 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,259 p=9744 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:26:24,262 p=9744 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:26:24,262 p=9744 u=ubuntu n=ansible | db01                       : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:26:24,262 p=9744 u=ubuntu n=ansible | web01                      : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:26:24,262 p=9744 u=ubuntu n=ansible | web02                      : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:28:31,150 p=9849 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:28:31,162 p=9849 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:28:32,643 p=9849 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:28:32,662 p=9849 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:28:32,691 p=9849 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:28:32,700 p=9849 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:28:33,403 p=9849 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:28:33,412 p=9849 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:28:33,413 p=9849 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:28:33,425 p=9849 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:28:33,491 p=9849 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:28:33,508 p=9849 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:28:33,520 p=9849 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.name": "playuser"
+}
+2022-07-21 17:28:33,528 p=9849 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:28:33,589 p=9849 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:28:33,615 p=9849 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:28:33,624 p=9849 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.comment": "variable from playbook"
+}
+2022-07-21 17:28:33,627 p=9849 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:28:33,627 p=9849 u=ubuntu n=ansible | db01                       : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:28:33,628 p=9849 u=ubuntu n=ansible | web01                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:28:33,628 p=9849 u=ubuntu n=ansible | web02                      : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:29:49,542 p=9948 u=ubuntu n=ansible | PLAY [Understanding presedence of variables] ***********************************************************************************
+2022-07-21 17:29:49,554 p=9948 u=ubuntu n=ansible | TASK [Gathering Facts] *********************************************************************************************************
+2022-07-21 17:29:51,037 p=9948 u=ubuntu n=ansible | ok: [web01]
+2022-07-21 17:29:51,075 p=9948 u=ubuntu n=ansible | ok: [db01]
+2022-07-21 17:29:51,086 p=9948 u=ubuntu n=ansible | ok: [web02]
+2022-07-21 17:29:51,094 p=9948 u=ubuntu n=ansible | TASK [create a user] ***********************************************************************************************************
+2022-07-21 17:29:51,789 p=9948 u=ubuntu n=ansible | changed: [web02]
+2022-07-21 17:29:51,793 p=9948 u=ubuntu n=ansible | changed: [db01]
+2022-07-21 17:29:51,796 p=9948 u=ubuntu n=ansible | changed: [web01]
+2022-07-21 17:29:51,806 p=9948 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:29:51,878 p=9948 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:51,888 p=9948 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:51,899 p=9948 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.name": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:51,907 p=9948 u=ubuntu n=ansible | TASK [debug] *******************************************************************************************************************
+2022-07-21 17:29:51,970 p=9948 u=ubuntu n=ansible | ok: [web01] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:51,993 p=9948 u=ubuntu n=ansible | ok: [web02] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:52,001 p=9948 u=ubuntu n=ansible | ok: [db01] => {
+    "USROUT.comment": "VARIABLE IS NOT DEFINED!"
+}
+2022-07-21 17:29:52,003 p=9948 u=ubuntu n=ansible | PLAY RECAP *********************************************************************************************************************
+2022-07-21 17:29:52,004 p=9948 u=ubuntu n=ansible | db01                       : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:29:52,004 p=9948 u=ubuntu n=ansible | web01                      : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-21 17:29:52,004 p=9948 u=ubuntu n=ansible | web02                      : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-07-22 17:03:34,295 p=1441 u=ubuntu n=ansible | web01 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "172.31.89.89"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::10e7:3bff:fe31:573"
+        ], 
+        "ansible_apparmor": {
+            "status": "disabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "08/24/2006", 
+        "ansible_bios_version": "4.11.amazon", 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-1160.59.1.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "console": "ttyS0", 
+            "crashkernel": "auto", 
+            "net.ifnames": "0", 
+            "ro": true, 
+            "root": "UUID=44a6a613-4e21-478b-a909-ab653c9d39df"
+        }, 
+        "ansible_date_time": {
+            "date": "2022-07-22", 
+            "day": "22", 
+            "epoch": "1658509414", 
+            "hour": "17", 
+            "iso8601": "2022-07-22T17:03:34Z", 
+            "iso8601_basic": "20220722T170334220800", 
+            "iso8601_basic_short": "20220722T170334", 
+            "iso8601_micro": "2022-07-22T17:03:34.220800Z", 
+            "minute": "03", 
+            "month": "07", 
+            "second": "34", 
+            "time": "17:03:34", 
+            "tz": "UTC", 
+            "tz_offset": "+0000", 
+            "weekday": "Friday", 
+            "weekday_number": "5", 
+            "weeknumber": "29", 
+            "year": "2022"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "172.31.89.89", 
+            "alias": "eth0", 
+            "broadcast": "172.31.95.255", 
+            "gateway": "172.31.80.1", 
+            "interface": "eth0", 
+            "macaddress": "12:e7:3b:31:05:73", 
+            "mtu": 9001, 
+            "netmask": "255.255.240.0", 
+            "network": "172.31.80.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {}, 
+            "masters": {}, 
+            "uuids": {
+                "xvda1": [
+                    "44a6a613-4e21-478b-a909-ab653c9d39df"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "xvda": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {
+                    "xvda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [], 
+                            "masters": [], 
+                            "uuids": [
+                                "44a6a613-4e21-478b-a909-ab653c9d39df"
+                            ]
+                        }, 
+                        "sectors": "20969439", 
+                        "sectorsize": 512, 
+                        "size": "10.00 GB", 
+                        "start": "2048", 
+                        "uuid": "44a6a613-4e21-478b-a909-ab653c9d39df"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "0", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "20971520", 
+                "sectorsize": "512", 
+                "size": "10.00 GB", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }
+        }, 
+        "ansible_distribution": "CentOS", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/redhat-release", 
+        "ansible_distribution_file_variety": "RedHat", 
+        "ansible_distribution_major_version": "7", 
+        "ansible_distribution_release": "Core", 
+        "ansible_distribution_version": "7.9", 
+        "ansible_dns": {
+            "nameservers": [
+                "172.31.0.2"
+            ], 
+            "search": [
+                "ec2.internal"
+            ]
+        }, 
+        "ansible_domain": "ec2.internal", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_env": {
+            "HOME": "/root", 
+            "LANG": "C", 
+            "LC_ALL": "C", 
+            "LC_MESSAGES": "C", 
+            "LOGNAME": "root", 
+            "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:", 
+            "MAIL": "/var/mail/centos", 
+            "PATH": "/sbin:/bin:/usr/sbin:/usr/bin", 
+            "PWD": "/home/centos", 
+            "SHELL": "/bin/bash", 
+            "SHLVL": "1", 
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-jlojwxuhlxrlvinnhjjcofrmywlxerug ; /usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1658509412.82-1458-4966370352393/AnsiballZ_setup.py", 
+            "SUDO_GID": "1000", 
+            "SUDO_UID": "1000", 
+            "SUDO_USER": "centos", 
+            "TERM": "xterm-256color", 
+            "USER": "root", 
+            "USERNAME": "root", 
+            "XDG_SESSION_ID": "2", 
+            "_": "/usr/bin/python"
+        }, 
+        "ansible_eth0": {
+            "active": true, 
+            "device": "eth0", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "off [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "off [fixed]", 
+                "netns_local": "off [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on [fixed]", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "off [fixed]", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "off [fixed]", 
+                "tx_checksum_ipv4": "on [fixed]", 
+                "tx_checksum_ipv6": "on", 
+                "tx_checksum_sctp": "off [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "on [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "off [fixed]", 
+                "tx_nocache_copy": "off", 
+                "tx_scatter_gather": "on", 
+                "tx_scatter_gather_fraglist": "off [fixed]", 
+                "tx_sctp_segmentation": "off [fixed]", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "off [fixed]", 
+                "tx_tcp_mangleid_segmentation": "off", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "off [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "off [fixed]", 
+                "vlan_challenged": "off [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "172.31.89.89", 
+                "broadcast": "172.31.95.255", 
+                "netmask": "255.255.240.0", 
+                "network": "172.31.80.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::10e7:3bff:fe31:573", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "12:e7:3b:31:05:73", 
+            "module": "xen_netfront", 
+            "mtu": 9001, 
+            "pciid": "vif-0", 
+            "promisc": false, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "ether"
+        }, 
+        "ansible_fibre_channel_wwn": [], 
+        "ansible_fips": false, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "ip-172-31-89-89.ec2.internal", 
+        "ansible_hostname": "ip-172-31-89-89", 
+        "ansible_hostnqn": "", 
+        "ansible_interfaces": [
+            "lo", 
+            "eth0"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_iscsi_iqn": "", 
+        "ansible_kernel": "3.10.0-1160.59.1.el7.x86_64", 
+        "ansible_kernel_version": "#1 SMP Wed Feb 23 16:47:03 UTC 2022", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "on [fixed]", 
+                "netns_local": "on [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on [fixed]", 
+                "rx_fcs": "off [fixed]", 
+                "rx_gro_hw": "off [fixed]", 
+                "rx_udp_tunnel_port_offload": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "off [fixed]", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on [fixed]", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_csum_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_partial": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off [fixed]", 
+                "tx_scatter_gather": "on [fixed]", 
+                "tx_scatter_gather_fraglist": "on [fixed]", 
+                "tx_sctp_segmentation": "on", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_mangleid_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_csum_segmentation": "off [fixed]", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "off [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "on [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "loopback"
+        }, 
+        "ansible_local": {}, 
+        "ansible_lsb": {}, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "b53ff59321fedc6a481aabc5ff65ced0", 
+        "ansible_memfree_mb": 766, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 858, 
+                "used": 131
+            }, 
+            "real": {
+                "free": 766, 
+                "total": 989, 
+                "used": 223
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 0, 
+                "total": 0, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 989, 
+        "ansible_mounts": [
+            {
+                "block_available": 2181753, 
+                "block_size": 4096, 
+                "block_total": 2618560, 
+                "block_used": 436807, 
+                "device": "/dev/xvda1", 
+                "fstype": "xfs", 
+                "inode_available": 5209839, 
+                "inode_total": 5242240, 
+                "inode_used": 32401, 
+                "mount": "/", 
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota", 
+                "size_available": 8936460288, 
+                "size_total": 10725621760, 
+                "uuid": "44a6a613-4e21-478b-a909-ab653c9d39df"
+            }
+        ], 
+        "ansible_nodename": "ip-172-31-89-89.ec2.internal", 
+        "ansible_os_family": "RedHat", 
+        "ansible_pkg_mgr": "yum", 
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-1160.59.1.el7.x86_64", 
+            "LANG": "en_US.UTF-8", 
+            "console": [
+                "tty0", 
+                "ttyS0,115200n8", 
+                "ttyS0"
+            ], 
+            "crashkernel": "auto", 
+            "net.ifnames": "0", 
+            "ro": true, 
+            "root": "UUID=44a6a613-4e21-478b-a909-ab653c9d39df"
+        }, 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz"
+        ], 
+        "ansible_processor_cores": 1, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 1, 
+        "ansible_product_name": "HVM domU", 
+        "ansible_product_serial": "ec27cc60-99fe-5f36-9eb0-8611408a5a70", 
+        "ansible_product_uuid": "EC27CC60-99FE-5F36-9EB0-8611408A5A70", 
+        "ansible_product_version": "4.11.amazon", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 5, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                5, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.5", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_selinux": {
+            "config_mode": "enforcing", 
+            "mode": "enforcing", 
+            "policyvers": 31, 
+            "status": "enabled", 
+            "type": "targeted"
+        }, 
+        "ansible_selinux_python_present": true, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD63HS2DQr6BTyJ9B1XH1MBVX0GNV48yhukPmp9c2naRas+cwZGrKUWxNERCy+OfEN5BZbHQexseuUa4sPeTog0=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAII/8Yrd3DifvWWI/k/jG7VicmygH7N1KJNi/MPppB/SE", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQC47BnlN8TLFGGkQRZF1wFQAOhNjkbc959J+8WpGWl5IA1ml9anu9Z3mTcxwWCeGi4Y0POvQgdeaAHZxl3fqsH8UOtlSEDN8V2vsr/S6SJ/aX1pMeXJ+zof5jRhmhkLIrEGyXfEZynbPf1YtF/HcWnXlRzh48XKQKSmSwA3qcCn1vVjLzzinxSjXQIOcfjemZcj4WfS5PxT+uNsCj90HnesRBPofGLCIAiF9+quPAbwRjkFaFDwaxnHsW5Jl+qrRTiHVJvjjw70nYau7NIXDhgEa8I1EUmKwRWXSTxLYo9oIdYkz23hijESvIdMG6mW9UldT+W3vvPhOwZeYh/N2id7", 
+        "ansible_swapfree_mb": 0, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_dac_read_search", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_linux_immutable", 
+            "cap_net_bind_service", 
+            "cap_net_broadcast", 
+            "cap_net_admin", 
+            "cap_net_raw", 
+            "cap_ipc_lock", 
+            "cap_ipc_owner", 
+            "cap_sys_module", 
+            "cap_sys_rawio", 
+            "cap_sys_chroot", 
+            "cap_sys_ptrace", 
+            "cap_sys_pacct", 
+            "cap_sys_admin", 
+            "cap_sys_boot", 
+            "cap_sys_nice", 
+            "cap_sys_resource", 
+            "cap_sys_time", 
+            "cap_sys_tty_config", 
+            "cap_mknod", 
+            "cap_lease", 
+            "cap_audit_write", 
+            "cap_audit_control", 
+            "cap_setfcap", 
+            "cap_mac_override", 
+            "cap_mac_admin", 
+            "cap_syslog", 
+            "35", 
+            "36+ep"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "Xen", 
+        "ansible_uptime_seconds": 565, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "xen", 
+        "discovered_interpreter_python": "/usr/bin/python", 
+        "gather_subset": [
+            "all"
+        ], 
+        "module_setup": true
+    }, 
+    "changed": false
+}
